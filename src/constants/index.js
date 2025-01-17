@@ -1,7 +1,5 @@
-import project1 from "../assets/projects/project-1.jpg";
-// import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/sensoritic.jpeg";
+import project2 from "../assets/projects/portfolio.png";
 
 export const HERO_CONTENT = `I am a creative and detail-oriented full stack developer with the ability to tackle challenges strategically and with critical thinking. My passion for learning and problem-solving drives me to deliver innovative solutions and make a positive impact on every project I undertake.`;
 
@@ -27,7 +25,7 @@ export const PROJECTS = [
   },
   {
     title: "Portfolio Website",
-    image: project3,
+    image: project2,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
