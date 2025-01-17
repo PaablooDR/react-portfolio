@@ -1,5 +1,6 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+// import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/profilePic.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -24,13 +25,13 @@ const Hero = () => {
                         animate="visible"
                         className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
                     >
-                            Pablo De Gregorio
+                        Pablo De Gregorio
                     </motion.h1>
                     <motion.span
                         variants={container(0.5)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
                     >
                         Full Stack Developer
                     </motion.span>
@@ -38,7 +39,7 @@ const Hero = () => {
                         variants={container(1)}
                         initial="hidden"
                         animate="visible"
-                        className="my-2 max-w-xl py-6 font-light tracking-tighteer"
+                        className="my-2 max-w-xl py-6 font-light text-xl tracking-tighteer"
                     >
                         { HERO_CONTENT }
                     </motion.p>
@@ -47,12 +48,18 @@ const Hero = () => {
             {/* Profile Image */}
             <div className="w-full lg:w-1/2 lg:p-8">
                 <div className="flex justify-center">
-                    <motion.img 
+                    <motion.div 
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        src={ profilePic } alt="Pablo De Gregorio"
-                    />
+                        className="rounded-full w-2/3 h-2/3 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 p-1"
+                    >
+                        <img 
+                            src={profilePic}
+                            alt="Pablo De Gregorio"
+                            className="rounded-full w-full h-full object-cover bg-white"
+                        />
+                    </motion.div>
                 </div>
             </div>
         </div>
