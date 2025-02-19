@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Social Media */}
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
             <a 
-              href="www.linkedin.com/in/pablo-de-gregorio-2769b8327" 
+              href="https://www.linkedin.com/in/pablo-de-gregorio-2769b8327" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
